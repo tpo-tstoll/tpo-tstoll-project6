@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 Oops! Wrong turn
+    h2= `${error.status}-- ${error.message}` 
+    pre= error.stack
+
+    a(href='/') <h1>Lets get outta here &rarr; </h1>
