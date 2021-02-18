@@ -7,7 +7,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://tpo-tstoll.github.io/tpo-tstoll-project1/",
             "github_link": "https://github.com/tpo-tstoll/tpo-tstoll-project1",
-            "image_urls": ["./images/p1-1.JPG", "./images/p1-2.JPG", "./images/p1-3.JPG"]
+            "image_urls": ["/static/images/p1-1.JPG", "/static/images/p1-2.JPG", "/static/images/p1-3.JPG"]
         },
         {
             "id": 1,
@@ -16,7 +16,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://tpo-tstoll.github.io/tpo-tstoll-project2/",
             "github_link": "https://github.com/tpo-tstoll/tpo-tstoll-project2",
-            "image_urls": ["./images/p2-1.JPG", "./images/p2-2.JPG"]
+            "image_urls": ["/static/images/p2-1.JPG", "/static/images/p2-2.JPG", "/static/images/p2-3.JPG"]
         },
         {
             "id": 2,
@@ -25,7 +25,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://tpo-tstoll.github.io/tpo-tstoll-project3/",
             "github_link": "https://github.com/tpo-tstoll/tpo-tstoll-project3",
-            "image_urls": ["./images/p3-1.JPG", "./images/p3-2.JPG", "./images/p3-3.JPG"]
+            "image_urls": ["/static/images/p3-1.JPG", "/static/images/p3-2.JPG", "/static/images/p3-3.JPG"]
         },
         {
             "id": 3,
@@ -34,7 +34,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://tpo-tstoll.github.io/tpo-tstoll-project4/",
             "github_link": "https://github.com/tpo-tstoll/tpo-tstoll-project4",
-            "image_urls": ["./images/p4-1.JPG", "./images/p4-2.JPG", "./images/p4-3.JPG"]
+            "image_urls": ["/static/images/p4-1.JPG", "/static/images/p4-2.JPG", "/static/images/p4-3.JPG"]
         },
         {
             "id": 4,
@@ -43,7 +43,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://tpo-tstoll.github.io/tpo-tstoll-project5/",
             "github_link": "https://github.com/tpo-tstoll/tpo-tstoll-project5",
-            "image_urls": ["./images/p5-1.JPG", "./images/p5-2.JPG", "./images/p5-3.JPG"]
+            "image_urls": ["/static/images/p5-1.JPG", "/static/images/p5-2.JPG", "/static/images/p5-3.JPG"]
         }
     ] 
 }
