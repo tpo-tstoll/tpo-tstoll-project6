@@ -23,6 +23,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.status(err.status);
+    console.log(`${err.status} -- Oops! It appears something went wrong -- ${err.message}`)
     if (err.status === 404) {
         res.render('page-not-found', {err});
     } else {
