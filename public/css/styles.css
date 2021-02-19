@@ -362,3 +362,25 @@ nav a span {
     max-width: 1200px;
   }
 }
+
+/*Changes Below*/
+
+body {
+  background: #4538fc;
+}
+
+.sidebar {
+  background-image: linear-gradient(to bottom , #03002c, #4538fc);
+}
+
+.sidebar p {
+  color: rgb(236, 235, 235)
+}
+
+.sidebar a {
+  color: rgb(236, 235, 235)
+}
+
+.cell img:hover {
+  transform: scale(1.1);
+}

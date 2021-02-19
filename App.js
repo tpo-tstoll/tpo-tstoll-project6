@@ -1,3 +1,4 @@
+//Setup packages and routes
 const express = require('express');
 const app = express();
 
@@ -7,19 +8,26 @@ app.use('/static', express.static('public'));
 const mainRoutes = require('./routes');
 const projectRoutes = require('./routes/project');
 
+//Calls mainRoutes and projectRoutes from the routes folder
 app.use(mainRoutes);
 app.use('/project', projectRoutes);
 
+//Creates 404 error if an invalid route is input
 app.use((req, res, next) => {
-    const err = new Error('Not Found');
+    const err = new Error('Page Not Found');
     err.status = 404;
     next(err);
 });
 
+//Catches error and renders page based upon status for for 404 or general error
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.status(err.status);
-    res.render('error');
+    if (err.status === 404) {
+        res.render('page-not-found', {err});
+    } else {
+        res.render('error', {err});
+    }
 });
 
 
