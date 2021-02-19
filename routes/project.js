@@ -6,13 +6,16 @@ const router = express.Router();
 const data = require('../data.json');
 const {projects} = data;
 
-//Creates route to render 'project' page based upon id. Verifies id is valid based upon data length, if not directs back to 'index' page
-router.get('/:id', (req, res) => {
+//Creates route to render 'project' page based upon id. Verifies id is valid, if not sends a 404 error with a custom message
+router.get('/:id', (req, res, next) => {
     const {id} = req.params;
-    if (id < projects.length) {
-    res.render('project', projects[id]);
+    if (projects[id]) {
+        res.render('project', projects[id]);
     } else {
-        res.redirect('../');
+        const err = new Error();
+        err.status = 404;
+        err.message = 'The requested project does not exist'
+        next(err);
     }
 });
 

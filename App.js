@@ -10,9 +10,9 @@ const projectRoutes = require('./routes/project');
 
 //Calls mainRoutes and projectRoutes from the routes folder
 app.use(mainRoutes);
-app.use('/project', projectRoutes);
+app.use("/project", projectRoutes);
 
-//Creates 404 error if an invalid route is input
+//Creates 404 error if an invalid route is encoutered
 app.use((req, res, next) => {
     const err = new Error('Page Not Found');
     err.status = 404;
